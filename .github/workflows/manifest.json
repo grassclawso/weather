@@ -1,0 +1,17 @@
+{
+  "short_name": "WeatherApp",
+  "name": "Local Weather Dashboard PWA",
+  "icons": [
+    {
+      "src": "https://flaticon.com",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#1e3c72",
+  "theme_color": "#2196F3",
+  "display": "standalone",
+  "orientation": "portrait"
+}
