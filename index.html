@@ -74,10 +74,11 @@
 
         async function fetchWeather(position) {
             /* New South Wales, Australia */
-            const lat = -33.9;            
-            const lon = 151.2;
-            /* const lat = position.coords.latitude;    */        
-            /* const lon = position.coords.longitude;   */
+            /* const lat = -33.9; */            
+            /* const lon = 151.2; */
+            const lat = position.coords.latitude;            
+            const lon = position.coords.longitude;   
+            
             try {
                 // Free public weather API - No API key registration required
                 const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m`;
