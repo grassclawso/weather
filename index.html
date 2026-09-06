@@ -73,8 +73,10 @@
         }
 
         async function fetchWeather(position) {
-            const lat = 22.319859; /* position.coords.latitude; */            
-            const lon = 114.198555; /* position.coords.longitude; */
+            /* const lat = 22.319859; */            
+            /* const lon = 114.198555; */
+            const lat = position.coords.latitude;            
+            const lon = position.coords.longitude;
             try {
                 // Free public weather API - No API key registration required
                 const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m`;
